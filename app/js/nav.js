@@ -6,10 +6,7 @@ const hoverUnderline = function (navSelector, itemSelector, underlineSelector, a
             item = nav.find(itemSelector),
             underline = nav.find(underlineSelector);
         item.hover(function () {
-            underline.stop();
-            underline.animate({
-                'left': this.offsetLeft
-            }, animationSpeed)
+            underlineSlide(underline, this, animationSpeed)
         })
     });
 }

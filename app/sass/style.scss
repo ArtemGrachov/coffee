@@ -24,6 +24,28 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .1em;
+    color: black;
+    margin-bottom: rem(19px);
+}
+
+.subtitle {
+    text-align: center;
+    letter-spacing: -.01em;
+}
+
+.darkblock {
+    color: white;
+    .title {
+        color: white;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
 }
 
 .btn {
