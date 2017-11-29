@@ -1,8 +1,72 @@
 .top {
     height: 100vh;
-    outline: rem(1px) dashed orange;
-    background-image: url('../img/layout/mask-white.png'), url('../img/backgrounds/background-top.jpg');
-    background-size: contain, cover;
-    background-position: center bottom, center;
-    background-repeat: no-repeat
+    background-image: url('../img/blocks/top/granola.png'), url('../img/layout/mask-white.png'), url('../img/backgrounds/background-top.jpg');
+    background-size: rem(240px), contain, cover;
+    background-position: 93% bottom, center bottom, center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    &-wrap {
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        position: absolute;
+        background: url('../img/blocks/top/block-top.svg'), url('../img/blocks/top/block-bottom.svg');
+        background-position: top center, bottom center;
+        background-repeat: no-repeat;
+        background-size: rem(91px), rem(154px);
+        padding: rem(43px) 0 rem(34px);
+    }
+    &-title {
+        font-size: rem(22px);
+        letter-spacing: -.02em;
+        &_lg {
+            font-size: rem(57px);
+            letter-spacing: .106em;
+            margin-bottom: rem(29px);
+        }
+        &_sm {
+            letter-spacing: .014em;
+            $arrows-margin: rem(84px);
+            font-size: rem(17px);
+            margin-bottom: rem(26px);
+            &:before,
+            &:after {
+                margin-bottom: rem(4px);
+                display: inline-block;
+                content: '';
+                width: rem(102px);
+                height: rem(8px);
+                background-repeat: no-repeat;
+                background-size: cover;
+                vertical-align: middle;
+            }
+            &:before {
+                background-image: url('../img/blocks/top/title-left.svg');
+                margin-right: $arrows-margin;
+                background-position: right center;
+            }
+            &:after {
+                background-image: url('../img/blocks/top/title-right.svg');
+                margin-left: $arrows-margin;
+                background-position: left center;
+            }
+        }
+    }
+    &__scroll {
+        position: absolute;
+        bottom: 0;
+        a {
+            margin: 0 auto;
+            display: block;
+            width: rem(61px);
+            height: rem(61px);
+            border-radius: 50%;
+            border: rem(1px) solid white;
+            background-image: url('../img/interface/arrow-down.png');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 }

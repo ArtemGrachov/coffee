@@ -13,6 +13,11 @@
     src: url('../fonts/Roboto-Black.ttf');
 }
 
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
 .title {
     font-family: 'RobotoBlack';
     font-size: rem(50px);
@@ -32,4 +37,8 @@
             color: white;
         }
     }
+}
+
+.accent {
+    color: $gold;
 }

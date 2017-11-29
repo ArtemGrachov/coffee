@@ -3,28 +3,75 @@
     top: 0;
     left: 0;
     width: 100%;
+    border-bottom: rem(1px) solid rgba(white, .42);
+    z-index: 10;
     @extend %clearfix;
+    &-logo {
+        width: rem(300px);
+        margin-left: rem(32px);
+    }
+    &-right {
+        float: right;
+        outline-offset: -2px;
+    }
     &__tel {
-        float: left;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: rem(21px);
+        a {
+            display: block;
+            padding: 0 rem(23px);
+            font-size: rem(26px);
+            color: white;
+            text-decoration: none;
+            font-family: 'RobotoBlack';
+            letter-spacing: -.04em;
+            &:hover {
+                color: $gold;
+            }
+        }
     }
 }
 
 .nav {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: rem(2px);
+    margin-right: rem(97px);
     ul {
         @extend %list;
     }
     li {
         display: inline-block;
-        margin-right: rem(60px);
+        margin-right: rem(46px);
         position: relative;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:before {
+            display: block;
+            content: '';
+            background: white;
+            border-radius: 50%;
+            width: rem(5px);
+            height: rem(5px);
+            position: absolute;
+            left: rem(-25px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:first-child {
+            &:before {
+                content: none;
+            }
+        }
     }
     a {
         font-family: 'RobotoBlack';
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        padding: rem(40px) rem(10px);
+        padding: rem(39px) rem(10px);
         display: block;
         font-size: rem(12.5px);
         &:hover {
