@@ -3,8 +3,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: rem(1px) solid rgba(white, .42);
     z-index: 10;
+    padding-left: rem(332px);
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: rem(229px);
+        height: rem(149px);
+        height: 150%;
+        background: url('../img/logo.png');
+        background-size: rem(229px);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        left: rem(71px);
+        bottom: rem(-72px);
+    }
     @extend %clearfix;
     &-logo {
         width: rem(300px);
@@ -12,7 +26,19 @@
     }
     &-right {
         float: right;
+        text-align: right;
+        width: 100%;
         outline-offset: -2px;
+        border-bottom: rem(1px) solid rgba(white, .42);
+        &:before {
+            content: '';
+            width: rem(32px);
+            top: 100%;
+            left: 0;
+            display: block;
+            position: absolute;
+            border-bottom: rem(1px) solid rgba(white, .42);
+        }
     }
     &__tel {
         display: inline-block;
@@ -38,6 +64,7 @@
     vertical-align: middle;
     margin-top: rem(2px);
     margin-right: rem(97px);
+    position: relative;
     ul {
         @extend %list;
     }
@@ -77,5 +104,13 @@
         &:hover {
             color: $gold;
         }
+    }
+    &__underline {
+        width: rem(89px);
+        height: rem(3px);
+        position: absolute;
+        bottom: rem(-2px);
+        left: 0;
+        background: $gold;
     }
 }
