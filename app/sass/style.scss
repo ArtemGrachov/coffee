@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia.ttf');
+}
+
+@font-face {
+    font-family: 'GeorgiaBold';
+    src: url('../fonts/Georgia-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../fonts/Roboto-Black.ttf');
+}
+
+.title {
+    font-family: 'RobotoBlack';
+    font-size: rem(50px);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.btn {
+    @extend button;
+    &_trsp {
+        background: transparent;
+        color: black;
+        border-radius: 0;
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+}

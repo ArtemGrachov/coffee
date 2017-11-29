@@ -1,1 +1,1 @@
-module.exports = [];
+module.exports = ['normalize.css/normalize.css'];

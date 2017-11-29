@@ -26,6 +26,5 @@ $.gulp.task('default', [
     'fonts',
     'img',
     'browser-sync',
-    'sprite',
     'watch'
 ])

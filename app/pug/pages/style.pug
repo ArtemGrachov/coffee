@@ -1,0 +1,90 @@
+extends ../templates/page.pug
+block variables
+    - title = 'Style Page'
+block content
+    div(style="width:1500px; margin: 0 auto;")
+        .title Programs
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat vero, alias error minima consectetur perferendis recusandae consequatur architecto, voluptatibus quibusdam, obcaecati laboriosam at vel ullam accusantium impedit cum veniam?
+        h1 Mollit minim ea culpa id voluptate esse voluptate ut cillum sit.
+        h2 Mollit minim ea culpa id voluptate esse voluptate ut cillum sit.
+        h3 Mollit minim ea culpa id voluptate esse voluptate ut cillum sit.
+        h4 Mollit minim ea culpa id voluptate esse voluptate ut cillum sit.
+        h5 Mollit minim ea culpa id voluptate esse voluptate ut cillum sit.
+        h6 Mollit minim ea culpa id voluptate esse voluptate ut cillum sit.
+        div(style="margin-bottom:10px;")
+            button(type="button") Registration
+        div(style="margin-bottom:10px;")
+            button(type="button").btn_trsp Send
+        div(style="margin-bottom:10px;")
+            button(type="button" disabled) Registration
+        div(style="margin-bottom:10px;")    
+            button(type="button") Send
+        div(style="margin-bottom:10px;")
+            a(href="#").btn Registration
+        div(style="margin-bottom:10px;")
+            a(href="#").btn.btn_trsp Send
+        div(style="margin-bottom:10px;")
+            input(type="button" value="Registration")
+        div(style="margin-bottom:10px;")
+            input(type="text" placeholder="Your name")            
+        div(style="width:563px;text-align:justify; margin: 10px 0; background: black; color: white; padding: 40px;")
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        div(style="padding: 40px; text-align: center")
+            | Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 
+            br
+            | people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning
+            br
+            | refreshed and in a good mood! Recommended!
+        hr
+        table
+            thead
+                tr
+                    th Header Cell
+                    th Header Cell #2
+                    th Third Header Cell
+                    th Other
+            tbody
+                tr
+                    td First Cell
+                    td Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum necessitatibus blanditiis voluptatibus saepe similique ipsam? Fugiat omnis, odit esse sequi blanditiis perspiciatis debitis accusantium asperiores voluptatum soluta! Recusandae, consectetur!
+                    td 12345
+                    td TEST
+                tr
+                    td ABCDEF
+                    td Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum necessitatibus blanditiis voluptatibus saepe similique ipsam? Fugiat omnis, odit esse sequi blanditiis perspiciatis debitis accusantium asperiores voluptatum soluta! Recusandae, consectetur!
+                    td 12345
+                    td TEST
+                tr
+                    td Ea cillum commodo nostrud pariatur ut consequat dolore ad velit.
+                    td Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum necessitatibus blanditiis voluptatibus saepe similique ipsam? Fugiat omnis, odit esse sequi blanditiis perspiciatis debitis accusantium asperiores voluptatum soluta! Recusandae, consectetur!
+                    td 12345
+                    td TEST
+        hr
+        form
+            - i = 0
+            while i < 5
+                input(type="checkbox" id="testCheckbox"+i name="testCheckbox")
+                label(for="testCheckbox"+m) Test Checkbox #{i}
+                - i++
+            hr
+            - i = 0
+            while i < 5
+                input(type="radio" id="testRadio"+i name="testRadio")
+                label(for="testRadio"+i) Test Radio #{i}
+                - i++
+            hr
+            each input in ['text','number','email','password','submit','button','color','date','datetime-local','range','month','search','tel','time','url','week']
+                div(style="margin-bottom: 10px; border: 1px dashed lightgrey")
+                    label(for=input+'TestInput') input[type="#{input}"]
+                    input(type=input id=input+'TestInput' name=input+'TestInput')
+        hr
+        ul
+            - i = 0
+            while i < 5
+                li Some unordered list item ##{i}
+                - i++
+        ol
+            - i = 0
+            while i < 5
+                li Some ordered list item ##{i}
+                - i++

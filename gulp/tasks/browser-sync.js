@@ -4,6 +4,7 @@ module.exports = function () {
             server: {
                 baseDir: $.cfg.dist
             },
+            notify: false,
             open: false
         });
     })

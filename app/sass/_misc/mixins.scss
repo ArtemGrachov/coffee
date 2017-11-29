@@ -3,6 +3,12 @@
     vertical-align: $valign;
 }
 
+%list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 %clearfix {
     &:after,
     &:before {
@@ -11,6 +17,13 @@
     }
     &:after {
         clear: both;
+    }
+}
+
+%hover {
+    transition: $transition;
+    &:hover {
+        opacity: .8;
     }
 }
 

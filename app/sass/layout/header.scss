@@ -1,0 +1,34 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @extend %clearfix;
+    &__tel {
+        float: left;
+    }
+}
+
+.nav {
+    float: left;
+    ul {
+        @extend %list;
+    }
+    li {
+        display: inline-block;
+        margin-right: rem(60px);
+        position: relative;
+    }
+    a {
+        font-family: 'RobotoBlack';
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: rem(40px) rem(10px);
+        display: block;
+        font-size: rem(12.5px);
+        &:hover {
+            color: $gold;
+        }
+    }
+}

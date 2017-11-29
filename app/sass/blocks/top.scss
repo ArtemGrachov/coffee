@@ -1,0 +1,8 @@
+.top {
+    height: 100vh;
+    outline: rem(1px) dashed orange;
+    background-image: url('../img/layout/mask-white.png'), url('../img/backgrounds/background-top.jpg');
+    background-size: contain, cover;
+    background-position: center bottom, center;
+    background-repeat: no-repeat
+}
