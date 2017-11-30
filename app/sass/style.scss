@@ -18,6 +18,11 @@
     src: url('../fonts/Roboto-Light.ttf');
 }
 
+.container {
+    width: rem(1180px);
+    margin: 0 auto;
+}
+
 .title {
     font-family: 'RobotoBlack';
     font-size: rem(50px);
@@ -25,7 +30,27 @@
     text-transform: uppercase;
     letter-spacing: .1em;
     color: black;
-    margin-bottom: rem(19px);
+    margin-bottom: rem(35px);
+    &_stars {
+        &:before,
+        &:after {
+            vertical-align: bottom;
+            background-image: url('../img/titles/title-star.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: rem(16px);
+            height: 1em;
+            width: 1em;
+            content: '';
+            display: inline-block;
+        }
+        &:before {
+            margin-right: rem(7px);
+        }
+        &:after {
+            margin-left: rem(7px);
+        }
+    }
 }
 
 .subtitle {
@@ -46,6 +71,11 @@
     h6 {
         color: white;
     }
+}
+
+.lightblock {
+    background: url('../img/backgrounds/background-light.png');
+    background-size: rem(200px);
 }
 
 .btn {

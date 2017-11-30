@@ -10,6 +10,6 @@ module.exports = function () {
             .pipe($.gp.cssbeautify())
             .pipe($.gp.cssmin())
             .pipe($.gulp.dest($.cfg.dist + 'css'))
-            .pipe($.browserSync.stream())
+        // .pipe($.browserSync.stream())
     })
 }

@@ -1,18 +1,23 @@
-.programs
-    .title.title_stars Programs
-    .subtitle We share their experience and professional barista championships multiple winners
-    .tabs
-        ul.tabs-nav
-            li
-                a(href="#") Basic
-            li
-                a(href="#") Premium
-            li
-                a(href="#") Platinum
-        ul.tabs-pages
-            li
-                include ./programs-basic.pug
-            li
-                include ./programs-premium.pug
-            li
-                include ./programs-platinum.pug
+.programs.lightblock
+    .container
+        .programs-header
+            .title.title_stars Programs
+            .subtitle We share their experience and professional barista championships multiple winners
+        .tabs
+            .tabs-nav
+                ul
+                    li
+                        a(href="#") Basic
+                    li
+                        a(href="#") Premium
+                    li
+                        a(href="#") Platinum
+                .tabs__underline
+            .tabs-pages
+                ul
+                    li
+                        include ./programs-basic.pug
+                    li
+                        include ./programs-premium.pug
+                    li
+                        include ./programs-platinum.pug

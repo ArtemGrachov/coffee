@@ -1,0 +1,48 @@
+.tabs {
+    &-nav {
+        border-bottom: rem(1px) solid #c6c6c6;
+        text-align: center;
+        position: relative;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+            &.active {
+                a {
+                    color: black;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #adadad;
+            text-transform: uppercase;
+            font-family: 'RobotoBlack';
+            font-size: rem(21px);
+            letter-spacing: .12em;
+            display: block;
+            padding: rem(30px) rem(100px);
+        }
+    }
+    &-pages {
+        &>ul {
+            &>li {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__underline {
+        width: rem(250px);
+        height: rem(3px);
+        position: absolute;
+        bottom: rem(-2px);
+        left: 0;
+        background: black;
+    }
+}
