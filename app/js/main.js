@@ -6,12 +6,13 @@ $(document).ready(function () {
         nav: '.tabs-nav',
         pages: '.tabs-pages',
         activeClass: 'active',
-        callbacks: tabCallbacks
+        callbacks: {
+            onInit: function (tabs, options) {
+                underlineSlide.set(tabs.container.find('.tabs__underline'), tabs.nav.eq(0))
+            },
+            onToggleNav: function (tabs, options, index) {
+                underlineSlide.move(tabs.container.find('.tabs__underline'), tabs.nav.eq(index), 300)
+            }
+        }
     })
 })
-
-const tabCallbacks = {
-    onToggle: function (tabs, options, list, index) {
-
-    }
-}

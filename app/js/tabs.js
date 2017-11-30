@@ -1,13 +1,21 @@
 const tabs = (function () {
-    const toggleActive = function (list, index, options, tabs) {
+    const toggleActive = function (list, index, activeClass) {
         list
             .eq(index)
-            .addClass(options.activeClass)
+            .addClass(activeClass)
             .siblings()
-            .removeClass(options.activeClass);
-
-        if (options.callbacks && options.callbacks.onToggle) {
-            options.callbacks.onToggle(tabs, options, list, index);
+            .removeClass(activeClass);
+    }
+    const toggleNav = function (index, options, tabs) {
+        toggleActive(tabs.nav, index, options.activeClass)
+        if (options.callbacks && options.callbacks.onToggleNav) {
+            options.callbacks.onToggleNav(tabs, options, index);
+        }
+    }
+    const togglePage = function (index, options, tabs) {
+        toggleActive(tabs.pages, index, options.activeClass)
+        if (options.callbacks && options.callbacks.onTogglePage) {
+            options.callbacks.onTogglePage(tabs, options, index);
         }
     }
     return {
@@ -35,8 +43,8 @@ const tabs = (function () {
                         .on('click', function (e) {
                             e.preventDefault();
                             const index = $(this).index();
-                            toggleActive(tabs.nav, index, options, tabs);
-                            toggleActive(tabs.pages, index, options, tabs);
+                            toggleNav(index, options, tabs);
+                            togglePage(index, options, tabs);
                         })
                     if (options.callbacks && options.callbacks.onInit) {
                         options.callbacks.onInit(tabs, options);

@@ -25,6 +25,7 @@
             letter-spacing: .12em;
             display: block;
             padding: rem(30px) rem(100px);
+            outline: none;
         }
     }
     &-pages {
@@ -44,5 +45,6 @@
         bottom: rem(-2px);
         left: 0;
         background: black;
+        position: absolute;
     }
 }

@@ -6,7 +6,7 @@ const hoverUnderline = function (navSelector, itemSelector, underlineSelector, a
             item = nav.find(itemSelector),
             underline = nav.find(underlineSelector);
         item.hover(function () {
-            underlineSlide(underline, this, animationSpeed)
+            underlineSlide(underline, $(this), animationSpeed)
         })
     });
 }
