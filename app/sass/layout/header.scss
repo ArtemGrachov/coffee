@@ -5,6 +5,10 @@
     width: 100%;
     z-index: 10;
     padding-left: rem(332px);
+    color: white;
+    a {
+        color: white;
+    }
     &:before {
         content: '';
         display: block;
@@ -48,7 +52,6 @@
             display: block;
             padding: 0 rem(23px);
             font-size: rem(26px);
-            color: white;
             text-decoration: none;
             font-family: 'RobotoBlack';
             letter-spacing: -.04em;
@@ -94,10 +97,8 @@
         }
     }
     a {
-        font-family: 'RobotoBlack';
-        color: white;
+        @extend %title;
         text-decoration: none;
-        text-transform: uppercase;
         padding: rem(39px) rem(10px);
         display: block;
         font-size: rem(12.5px);

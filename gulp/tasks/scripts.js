@@ -9,7 +9,7 @@ module.exports = function () {
                 }
             ))
             .pipe($.gp.concat('main.js'))
-            .pipe($.gp.uglify())
+            // .pipe($.gp.uglify())
             .pipe($.gulp.dest($.cfg.dist + 'js'))
     })
 }

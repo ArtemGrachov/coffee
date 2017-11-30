@@ -1,0 +1,28 @@
+.icon {
+    height: rem(30px);
+    width: rem(30px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    &-certificate {
+        width: rem(30px);
+        height: rem(30px);
+        background-image: url('../img/blocks/programs/certificate.png');
+    }
+    &-clock {
+        background-image: url('../img/blocks/programs/clock.png');
+    }
+    &-ok,
+    &-err {
+        width: rem(16px);
+        height: rem(16px);
+    }
+    &-ok {
+        background-image: url('../img/interface/icon-ok.png');
+    }
+    &-err {
+        background-image: url('../img/interface/icon-err.png');
+    }
+}

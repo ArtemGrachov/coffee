@@ -3,4 +3,114 @@
     &-header {
         margin-bottom: rem(50px);
     }
+    &-prev {
+        @extend %clearfix;
+        padding-top: rem(97px);
+        color: black;
+        &-info {
+            padding-top: rem(7px);
+            position: relative;
+            z-index: 1;
+            float: left;
+            margin-bottom: rem(80px);
+            .btn {
+                margin-left: rem(2px);
+            }
+        }
+    }
+    &__img {
+        float: left;
+        width: rem(641px);
+        position: relative;
+        z-index: 1;
+        margin-right: rem(57px);
+        img {
+            width: 100%;
+        }
+    }
+    &__header {
+        font-size: rem(200px);
+        color: #dddddd;
+        position: absolute;
+        top: 0;
+        right: rem(71px);
+        font-family: 'RobotoBlack';
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    &-misc-list {
+        @extend %list;
+        margin-left: rem(2px);
+        margin-bottom: rem(24px);
+        li {
+            margin-bottom: rem(19px);
+            &:before {
+                content: none;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .icon {
+            margin-right: rem(15px);
+            margin-bottom: rem(3px);
+        }
+    }
+    &__course-name {
+        color: #2b2b2b;
+        font-size: rem(30px);
+        font-family: 'GeorgiaBold';
+        margin-bottom: rem(59px);
+    }
+    &__price {
+        padding-left: rem(3px);
+        font-size: rem(58px);
+        font-family: 'GeorgiaBold';
+        line-height: 1;
+        margin-bottom: rem(23px);
+    }
+    &__currency {
+        font-size: rem(31px);
+        vertical-align: middle;
+    }
+    &-about {
+        &-list {
+            @extend %list;
+            &>li {
+                width: rem(320px);
+                margin-right: rem(96px);
+                display: inline-block;
+                vertical-align: top;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            margin-bottom: rem(53px);
+        }
+        &__title {
+            width: inherit;
+            display: table-cell;
+            height: rem(90px);
+            border-top: rem(1px) solid #939393;
+            letter-spacing: .075em;
+            line-height: 1.5;
+            vertical-align: bottom;
+            margin-bottom: rem(18px);
+            @extend .title;
+            @extend .title_sm;
+        }
+        &__content {
+            margin-top: rem(33px);
+            margin-left: rem(1px);
+            ul {
+                @extend %list;
+            }
+            li {
+                &:before {
+                    content: '- ';
+                    display: inline;
+                }
+            }
+        }
+    }
 }
