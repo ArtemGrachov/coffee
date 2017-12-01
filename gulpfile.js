@@ -25,6 +25,17 @@ $.gulp.task('default', [
     'js-libs',
     'fonts',
     'img',
-    'browser-sync',
+    // 'browser-sync',
     'watch'
+])
+
+$.gulp.task('build', [
+    'clean',
+    'sass',
+    'pug',
+    'css-libs',
+    'scripts',
+    'js-libs',
+    'fonts',
+    'img'
 ])

@@ -1,21 +1,23 @@
 const tabs = (function () {
     const toggleActive = function (list, index, activeClass) {
+        const oldIndex = list.find('.' + activeClass).index();
         list
             .eq(index)
             .addClass(activeClass)
             .siblings()
             .removeClass(activeClass);
+        return oldIndex;
     }
     const toggleNav = function (index, options, tabs) {
-        toggleActive(tabs.nav, index, options.activeClass)
+        const oldIndex = toggleActive(tabs.nav, index, options.activeClass);
         if (options.callbacks && options.callbacks.onToggleNav) {
-            options.callbacks.onToggleNav(tabs, options, index);
+            options.callbacks.onToggleNav(tabs, options, index, oldIndex);
         }
     }
     const togglePage = function (index, options, tabs) {
-        toggleActive(tabs.pages, index, options.activeClass)
+        const oldIndex = toggleActive(tabs.pages, index, options.activeClass)
         if (options.callbacks && options.callbacks.onTogglePage) {
-            options.callbacks.onTogglePage(tabs, options, index);
+            options.callbacks.onTogglePage(tabs, options, index, oldIndex);
         }
     }
     return {

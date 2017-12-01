@@ -1,7 +1,12 @@
+@function programsPath($path) {
+    @return url('../img/blocks/programs/'+$path);
+}
+
 .programs {
-    padding-top: rem(110px);
+    padding-top: rem(80px);
+    position: relative;
     &-header {
-        margin-bottom: rem(50px);
+        margin-bottom: rem(58px);
     }
     &-prev {
         @extend %clearfix;
@@ -28,7 +33,7 @@
             width: 100%;
         }
     }
-    &__header {
+    &__bg-title {
         font-size: rem(200px);
         color: #dddddd;
         position: absolute;
@@ -37,6 +42,7 @@
         font-family: 'RobotoBlack';
         text-transform: uppercase;
         line-height: 1;
+        pointer-events: none;
     }
     &-misc-list {
         @extend %list;
@@ -104,6 +110,7 @@
             margin-left: rem(1px);
             ul {
                 @extend %list;
+                margin-top: rem(10px);
             }
             li {
                 &:before {
@@ -111,6 +118,53 @@
                     display: inline;
                 }
             }
+        }
+    }
+    &__bg {
+        &-top-left,
+        &-top-right,
+        &-bottom-left,
+        &-bottom-right {
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &-top-left {
+            background-image: programsPath('coffebean3_2x.png');
+            top: rem(163px);
+            left: rem(-38px);
+            height: rem(221px);
+            width: rem(221px);
+            background-size: rem(171.5px);
+            background-position: top left;
+        }
+        &-top-right {
+            background-image: programsPath('coffebean2.png');
+            height: rem(232.5px);
+            width: rem(232.5px);
+            background-size: rem(193.5px);
+            top: rem(675px);
+            right: rem(-104px);
+            background-position: top right;
+        }
+        &-bottom-left {
+            background-image: programsPath('Espresso-servis-coffeefly-02.png');
+            width: rem(220px);
+            height: rem(220px);
+            background-size: rem(192px);
+            left: rem(26px);
+            bottom: rem(-96px);
+            background-position: bottom left;
+        }
+        &-bottom-right {
+            background-image: programsPath('wood-coffee-beans-coffee1.png');
+            background-size: rem(883.5px);
+            right: rem(-73px);
+            bottom: 0;
+            width: rem(983.5px);
+            height: rem(983.5px);
+            opacity: .16;
+            background-position: bottom right;
         }
     }
 }

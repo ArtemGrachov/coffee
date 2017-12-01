@@ -1,8 +1,8 @@
 .top {
     height: 100vh;
-    background-image: url('../img/blocks/top/granola.png'), url('../img/layout/mask-white.png'), url('../img/backgrounds/background-top.jpg');
-    background-size: rem(240px), contain, cover;
-    background-position: 93% bottom, center bottom, center;
+    background-image: url('../img/layout/mask-white.png'), url('../img/backgrounds/background-top.jpg');
+    background-size: contain, cover;
+    background-position: center bottom, center;
     background-repeat: no-repeat;
     position: relative;
     &-wrap {
@@ -70,5 +70,15 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+    }
+    &__bg-granola {
+        background-image: url('../img/blocks/top/granola.png');
+        width: rem(240px);
+        height: rem(240px);
+        position: absolute;
+        bottom: rem(-40px);
+        right: rem(95px);
+        background-size: cover;
+        z-index: 5;
     }
 }

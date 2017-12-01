@@ -34,10 +34,11 @@
     text-align: center;
     letter-spacing: .1em;
     color: black;
-    margin-bottom: rem(35px);
+    margin-bottom: rem(19px);
     &_sm {
         font-size: rem(17px);
         text-align: left;
+        margin-bottom: rem(18px);
     }
     &_stars {
         &:before,

@@ -8,7 +8,8 @@
         }
         li {
             display: inline-block;
-            &.active {
+            &.active,
+            &:hover {
                 a {
                     color: black;
                 }
