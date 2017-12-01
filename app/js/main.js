@@ -14,5 +14,6 @@ $(document).ready(function () {
                 underlineSlide.move(tabs.container.find('.tabs__underline'), tabs.nav.eq(index), 300)
             }
         }
-    })
+    });
+    gallerySlider();
 })

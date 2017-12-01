@@ -1,0 +1,99 @@
+@function galleryPath($path) {
+    @return url('../img/blocks/gallery/'+$path);
+}
+
+.gallery {
+    background-color: #222121;
+    background-image: url('../img/layout/mask-white-top.png'), url('../img/layout/mask-white.png'), galleryPath('background.png');
+    background-size: contain, contain, cover;
+    background-position: top center, bottom center, center center;
+    background-repeat: no-repeat;
+    padding: rem(135px) 0 rem(146px);
+    &-title {
+        margin-bottom: rem(9px);
+        &:before,
+        &:after {
+            background-image: galleryPath('title-decor.svg');
+            background-repeat: no-repeat;
+            background-size: rem(31px);
+            background-position: center center;
+            vertical-align: middle;
+            height: 1em;
+            width: rem(31px);
+            content: '';
+            display: inline-block;
+        }
+        &:before {
+            margin-right: rem(40px);
+            transform: scaleX(-1);
+        }
+        &:after {
+            margin-left: rem(40px);
+        }
+    }
+    &-slider {
+        @extend %list;
+        margin-top: rem(72px);
+        ul {
+            height: 100%;
+            @extend %list;
+        }
+        li {
+            height: 100%;
+            height: rem(503.5px);
+            margin: 0 rem(26.5px);
+        }
+        img {
+            max-height: 100%;
+        }
+        &-nav {
+            text-align: center;
+            margin-top: rem(67px);
+        }
+        &__toggle {
+            width: rem(67px);
+            height: rem(67px);
+            padding: 0;
+            background: none;
+            border: rem(1px) solid $gold;
+            display: inline-block;
+            vertical-align: middle;
+            &:focus {
+                outline-color: $gold;
+            }
+            &:hover {
+                background: $gold;
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                content: '';
+                width: rem(109px);
+                height: rem(67px);
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 26"><line x1="0" y1="13" x2="13" y2="0" style="stroke:#fff;stroke-width:1" /><line x1="0" y1="13" x2="109" y2="13" style="stroke:#fff;stroke-width:1"/><line x1="0" y1="13" x2="13" y2="26" style="stroke:#fff;stroke-width:1" /></svg>');
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            &_prev {
+                margin-right: rem(106px);
+                &:before {
+                    margin-left: rem(27px);
+                }
+            }
+            &_next {
+                margin-left: rem(106px);
+                &:before {
+                    transform: scaleX(-1);
+                    margin-left: rem(-69px);
+                }
+            }
+        }
+        &__text {
+            font-size: rem(19.5px);
+            color: $gold;
+        }
+        &__count {
+            font-size: rem(30px);
+        }
+    }
+}

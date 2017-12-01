@@ -40,26 +40,6 @@
         text-align: left;
         margin-bottom: rem(18px);
     }
-    &_stars {
-        &:before,
-        &:after {
-            vertical-align: bottom;
-            background-image: url('../img/titles/title-star.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: rem(16px);
-            height: 1em;
-            width: 1em;
-            content: '';
-            display: inline-block;
-        }
-        &:before {
-            margin-right: rem(7px);
-        }
-        &:after {
-            margin-left: rem(7px);
-        }
-    }
 }
 
 .subtitle {

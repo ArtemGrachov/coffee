@@ -4,7 +4,28 @@
 
 .programs {
     padding-top: rem(80px);
+    padding-bottom: rem(140px);
     position: relative;
+    &-title {
+        &:before,
+        &:after {
+            vertical-align: bottom;
+            background-image: programsPath('title-decor.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: rem(16px);
+            height: 1em;
+            width: 1em;
+            content: '';
+            display: inline-block;
+        }
+        &:before {
+            margin-right: rem(7px);
+        }
+        &:after {
+            margin-left: rem(7px);
+        }
+    }
     &-header {
         margin-bottom: rem(58px);
     }
@@ -153,7 +174,7 @@
             height: rem(220px);
             background-size: rem(192px);
             left: rem(26px);
-            bottom: rem(-96px);
+            bottom: rem(-159px);
             background-position: bottom left;
         }
         &-bottom-right {

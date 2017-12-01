@@ -1,6 +1,10 @@
+@function topPath($path) {
+    @return url('../img/blocks/top/'+$path);
+}
+
 .top {
     height: 100vh;
-    background-image: url('../img/layout/mask-white.png'), url('../img/backgrounds/background-top.jpg');
+    background-image: url('../img/layout/mask-white.png'), topPath('background.png');
     background-size: contain, cover;
     background-position: center bottom, center;
     background-repeat: no-repeat;
@@ -11,7 +15,7 @@
         width: 100%;
         transform: translateY(-50%);
         position: absolute;
-        background: url('../img/blocks/top/block-top.svg'), url('../img/blocks/top/block-bottom.svg');
+        background: topPath('block-top.svg'), topPath('block-bottom.svg');
         background-position: top center, bottom center;
         background-repeat: no-repeat;
         background-size: rem(91px), rem(154px);
@@ -43,14 +47,14 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 vertical-align: middle;
+                background-image: topPath('title-decor.svg');
             }
             &:before {
-                background-image: url('../img/blocks/top/title-left.svg');
                 margin-right: $arrows-margin;
                 background-position: right center;
+                transform: scaleX(-1);
             }
             &:after {
-                background-image: url('../img/blocks/top/title-right.svg');
                 margin-left: $arrows-margin;
                 background-position: left center;
             }
@@ -66,13 +70,13 @@
             height: rem(61px);
             border-radius: 50%;
             border: rem(1px) solid white;
-            background-image: url('../img/interface/arrow-down.png');
+            background-image: topPath('arrow-down.png');
             background-position: center;
             background-repeat: no-repeat;
         }
     }
     &__bg-granola {
-        background-image: url('../img/blocks/top/granola.png');
+        background-image: topPath('granola.png');
         width: rem(240px);
         height: rem(240px);
         position: absolute;
