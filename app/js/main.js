@@ -16,4 +16,5 @@ $(document).ready(function () {
         }
     });
     gallerySlider();
+    testimonialsSlider();
 })

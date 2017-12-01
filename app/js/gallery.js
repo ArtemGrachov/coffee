@@ -1,5 +1,5 @@
 const gallerySlider = function () {
-    $('.gallery-slider>ul').slick({
+    $('.gallery-slider-list').slick({
         adaptiveHeight: true,
         centerMode: true,
         variableWidth: true,

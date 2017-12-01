@@ -8,7 +8,7 @@
     background-size: contain, contain, cover;
     background-position: top center, bottom center, center center;
     background-repeat: no-repeat;
-    padding: rem(135px) 0 rem(146px);
+    padding: rem(135px) 0 rem(171px);
     &-title {
         margin-bottom: rem(9px);
         &:before,
@@ -34,14 +34,15 @@
     &-slider {
         @extend %list;
         margin-top: rem(72px);
-        ul {
+        &-list {
             height: 100%;
             @extend %list;
         }
-        li {
+        &-item {
             height: 100%;
             height: rem(503.5px);
             margin: 0 rem(26.5px);
+            outline: none;
         }
         img {
             max-height: 100%;

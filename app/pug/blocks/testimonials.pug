@@ -1,2 +1,28 @@
 .testimonials
-    .container Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore dolorum libero vel debitis, facere aut provident temporibus. Similique tenetur fugit modi ad doloremque omnis quas inventore eveniet aperiam veritatis.
+    .container
+        .title Testimonials
+        .subtitle We have enough patience to teach you the art of coffee
+        .testimonials-slider
+            ul.testimonials-slider-list
+                - var n = 0
+                    li.testimonials-slider-item
+                        .testimonials-slider__img
+                            img(src="./img/blocks/testimonials/nikandrov.png")
+                        .title.title_sm Alex Nikandrov
+                        .testimonials-slider__text
+                            | Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300
+                            br
+                            | people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning
+                            br
+                            | refreshed and in a good mood! Recommended!
+                while n < 5
+                    li.testimonials-slider-item
+                        .testimonials-slider__img
+                            img(src="./img/blocks/testimonials/nikandrov.png")
+                        .title.title_sm Other slide ##{n}
+                        .testimonials-slider__text
+                            | Lorem ipsum dolor sit amet...
+                        - n++
+            .testimonials-slider-nav
+                a(href="#").testimonials-slider__toggle.testimonials-slider__toggle_prev
+                a(href="#").testimonials-slider__toggle.testimonials-slider__toggle_next

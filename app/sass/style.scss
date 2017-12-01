@@ -62,11 +62,6 @@
     }
 }
 
-.lightblock {
-    background: url('../img/backgrounds/background-light.png');
-    background-size: rem(200px);
-}
-
 .btn {
     @extend button;
     &_trsp {
