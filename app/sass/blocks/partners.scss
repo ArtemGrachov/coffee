@@ -1,0 +1,24 @@
+.partners {
+    background: rgba(black, .05);
+    padding: rem(111px) 0 rem(175px);
+    &-title {
+        &:before,
+        &:after {
+            width: 1em;
+            height: 1em;
+            border: 1px solid orange;
+            content: '';
+            display: inline-block;
+        }
+    }
+    &-slider {
+        position: relative;
+        &-list {
+            @extend %list;
+            padding: 0 rem(23px);
+        }
+        &-item {
+            outline: none;
+        }
+    }
+}
