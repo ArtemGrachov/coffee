@@ -3,7 +3,6 @@
 }
 
 .gallery {
-    background-color: #222121;
     background-image: url('../img/layout/mask-white-top.png'), url('../img/layout/mask-white.png'), galleryPath('background.png');
     background-size: contain, contain, cover;
     background-position: top center, bottom center, center center;

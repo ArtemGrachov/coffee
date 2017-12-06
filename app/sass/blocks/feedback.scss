@@ -1,0 +1,45 @@
+.feedback {
+    padding: rem(122px) 0 0;
+    &-title {
+        text-align: left;
+        border-bottom: rem(1px) solid black;
+        margin-bottom: rem(21px);
+    }
+    &-subtitle {
+        text-align: left;
+    }
+    &-wrap {
+        margin-left: rem(419px);
+    }
+    &-form {
+        margin-top: rem(96px);
+        &-section {
+            display: table-cell;
+            width: 50%;
+            &_right {
+                text-align: right;
+                vertical-align: bottom;
+            }
+        }
+    }
+    &__submit {
+        position: relative;
+        margin-right: rem(67px);
+        padding-left: rem(88px);
+        padding-right: rem(88px);
+        font-size: rem(16px);
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 28'%3E    %3Cpath stroke='%23000' d='M110 14L97 1M1 14h109M110 14L97 27'/%3E%3C/svg%3E");
+            background-size: rem(110px);
+            background-repeat: no-repeat;
+            top: 0;
+            right: rem(-68px);
+            background-position: center right;
+        }
+    }
+}

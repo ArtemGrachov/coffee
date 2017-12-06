@@ -21,6 +21,9 @@ body {
 
 a {
     transition: $transition;
+    &:hover {
+        color: $gold;
+    }
 }
 
 h1,
@@ -49,6 +52,7 @@ input[type="submit"] {
     padding: rem(17px) rem(66px) rem(16px);
     cursor: pointer;
     width: auto;
+    line-height: inherit; // ???
     @extend %hover;
     &[disabled] {
         opacity: .5;
@@ -63,8 +67,14 @@ input {
     font-size: rem(12.5px);
     text-transform: uppercase;
     letter-spacing: .04em;
-    padding: rem(11px) 0;
+    padding: rem(11px) 0 rem(12px);
     width: rem(382px);
+    background: transparent;
+    display: block;
+    margin: 0 0 rem(45px);
+    &:last-child {
+        margin-bottom: 0;
+    }
     &::placeholder {
         color: black;
     }

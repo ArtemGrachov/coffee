@@ -1,0 +1,110 @@
+.footer {
+    color: white;
+    background-image: url('../img/layout/mask-white-top.png'), url('../img/blocks/footer/background.jpg');
+    background-size: contain, cover;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+    padding: rem(152px) 0 0;
+    &-nav {
+        text-align: center;
+        display: block;
+        font-size: rem(13px);
+        letter-spacing: .07em;
+        margin: 0;
+        padding: 0;
+    }
+    &-content {
+        margin: rem(51px) 0 rem(64px);
+        @extend %clearfix;
+    }
+    &-section {
+        float: left;
+        width: 50%;
+        text-align: justify;
+        &:first-child {
+            padding-right: rem(25px);
+        }
+        &:last-child {
+            padding-left: rem(25px);
+        }
+    }
+    &-table {
+        background: rgba(black, .38);
+        border: rem(1px) solid white;
+        width: 100%;
+        font-family: 'RobotoBlack';
+        font-size: rem(16px);
+        text-transform: uppercase;
+        &-header {
+            border-bottom: rem(1px) solid white;
+        }
+        &-body {
+            table-layout: fixed;
+            width: inherit;
+            display: table;
+            border-collapse: collapse;
+        }
+        .row {
+            display: table-row;
+            &_top {
+                .cell {
+                    padding: rem(33px) rem(16px) rem(16px);
+                }
+            }
+            &_bottom {
+                .cell {
+                    padding: rem(50px) rem(44px) rem(44px);
+                }
+            }
+        }
+        .cell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            border: rem(1px) solid #4d4d4d;
+        }
+    }
+    &-icon {
+        width: rem(40px);
+        height: rem(40px);
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        &-phone {
+            background-image: url('../img/blocks/footer/phone.png');
+            background-size: rem(36px);
+        }
+        &-location {
+            background-image: url('../img/blocks/footer/location.png');
+            background-size: rem(22px);
+        }
+        &-envelope {
+            background-size: rem(39px);
+            background-image: url('../img/blocks/footer/envelope.png');
+        }
+    }
+    &-bottom {
+        padding: rem(49px) 0 rem(47px);
+        text-align: center;
+    }
+    &__link {
+        margin-left: rem(20px);
+        font-family: 'RobotoBlack';
+        text-transform: uppercase;
+        a {
+            color: white;
+            &:hover {
+                color: $gold;
+            }
+        }
+        &:before {
+            width: rem(1px);
+            height: 1.7em;
+            border-left: rem(2px) solid white;
+            display: inline-block;
+            vertical-align: middle;
+            content: '';
+            margin-right: rem(20px);
+        }
+    }
+}
