@@ -46,7 +46,7 @@ input[type="submit"] {
     color: white;
     text-transform: uppercase;
     letter-spacing: .08em;
-    padding: rem(17px) rem(60px);
+    padding: rem(17px) rem(66px) rem(16px);
     cursor: pointer;
     width: auto;
     @extend %hover;
@@ -81,6 +81,6 @@ table {
 
 td,
 th {
-    padding: rem(6px) rem(16px) rem(5px);
-    border: rem(2px) solid black;
+    padding: rem(6px) rem(17px) rem(6px);
+    border: rem(1px) solid black;
 }

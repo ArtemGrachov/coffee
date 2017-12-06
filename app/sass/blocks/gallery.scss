@@ -10,26 +10,29 @@
     background-repeat: no-repeat;
     padding: rem(135px) 0 rem(171px);
     &-title {
-        margin-bottom: rem(9px);
+        &-wrap {
+            margin-bottom: rem(10px);
+        }
+        position: relative;
+        margin: 0;
         &:before,
         &:after {
-            background-image: galleryPath('title-decor.svg');
-            background-repeat: no-repeat;
-            background-size: rem(31px);
-            background-position: center center;
-            vertical-align: middle;
-            height: 1em;
-            width: rem(31px);
+            position: absolute;
             content: '';
-            display: inline-block;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 26"><line x1="0" y1="13" x2="13" y2="0" style="stroke:#fff;stroke-width:1" /><line x1="0" y1="13" x2="109" y2="13" style="stroke:#fff;stroke-width:1"/><line x1="0" y1="13" x2="13" y2="26" style="stroke:#fff;stroke-width:1" /></svg>');
+            height: 100%;
+            width: rem(32px);
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192667 13.5936' height='13.594' width='30.193'%3E    %3Cg fill='%23fefdf9'%3E        %3Cpath d='M0 2.018h21.523V0H0zM0 7.806h30.193v-2.02H0zM0 13.594h21.523v-2.018H0z'/%3E    %3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: rem(32px);
+            background-position: center;
+            top: 0;
         }
         &:before {
-            margin-right: rem(40px);
+            left: rem(-71px);
             transform: scaleX(-1);
         }
         &:after {
-            margin-left: rem(40px);
+            right: rem(-71px);
         }
     }
     &-slider {
@@ -72,6 +75,7 @@
                 content: '';
                 width: rem(109px);
                 height: rem(67px);
+                background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 28'%3E    %3Cpath stroke='%23fff' d='M1 14L14 1M1 14h109M1 14l13 13'/%3E%3C/svg%3E");
                 background-position: center center;
                 background-repeat: no-repeat;
             }

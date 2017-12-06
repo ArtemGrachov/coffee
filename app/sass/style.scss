@@ -34,11 +34,11 @@
     text-align: center;
     letter-spacing: .1em;
     color: black;
-    margin: 0 0 rem(19px);
+    margin: 0 0 rem(20px);
     &_sm {
         font-size: rem(17px);
         text-align: left;
-        margin-bottom: rem(18px);
+        margin: 0 0 rem(19px);
     }
 }
 
@@ -90,11 +90,11 @@
         padding: rem(50px);
         &_prev {
             left: rem(-45px);
-            background-image: svg('<line x1="2" y1="10" x2="10" y2="2" style="stroke:#485260;stroke-width:2" /><line x1="2" y1="10" x2="10" y2="18" style="stroke:#485260;stroke-width:2" />', 10, 18);
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' viewBox='0 0 10 18'%3E    %3Cpath stroke='%23485260' stroke-width='2' d='M1 10l8-8M1 9l8 8'/%3E%3C/svg%3E");
         }
         &_next {
             right: rem(-45px);
-            background-image: svg('<line x1="9" y1="10" x2="1" y2="2" style="stroke:#485260;stroke-width:2" /><line x1="9" y1="10" x2="1" y2="18" style="stroke:#485260;stroke-width:2" />', 10, 18);
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' viewBox='0 0 10 18'%3E    %3Cpath stroke='%23485260' stroke-width='2' d='M9 10L1 2M9 9l-8 8'/%3E%3C/svg%3E");
         }
     }
 }

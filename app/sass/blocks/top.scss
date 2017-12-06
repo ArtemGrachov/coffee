@@ -19,59 +19,88 @@
         background-repeat: no-repeat;
         background-size: rem(91px), rem(154px);
         padding: rem(43px) 0 rem(34px);
+        &:before {
+            display: block;
+            height: rem(14px);
+            margin-bottom: rem(30px);
+            width: 100%;
+            content: '';
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59.934132 9.3552666'%3E    %3Cdefs%3E        %3CclipPath id='a'%3E            %3Cpath d='M0 7.016h44.951V0H0z'/%3E        %3C/clipPath%3E    %3C/defs%3E    %3Cg clip-path='url(%23a)' transform='matrix(1.33333 0 0 -1.33333 0 9.355)'%3E        %3Cpath d='M3.942 6.85l.903-1.83a.299.299 0 0 1 .226-.164l2.018-.294a.3.3 0 0 0 .167-.51l-1.46-1.425a.302.302 0 0 1-.088-.266l.345-2.01a.3.3 0 0 0-.435-.316l-1.805.95a.3.3 0 0 1-.279 0L1.728.034a.3.3 0 0 0-.435.316l.345 2.01a.302.302 0 0 1-.087.266L.091 4.051a.3.3 0 0 0 .166.511l2.018.294a.297.297 0 0 1 .226.164l.903 1.83a.3.3 0 0 0 .538 0M23.288 6.85l.903-1.83a.299.299 0 0 1 .226-.164l2.018-.294a.3.3 0 0 0 .167-.51l-1.46-1.425a.299.299 0 0 1-.087-.266L25.4.351a.3.3 0 0 0-.435-.316l-1.805.95a.3.3 0 0 1-.279 0l-1.806-.95a.3.3 0 0 0-.435.316l.345 2.01a.302.302 0 0 1-.087.266l-1.46 1.424a.3.3 0 0 0 .166.511l2.02.294a.297.297 0 0 1 .224.164l.903 1.83a.3.3 0 0 0 .538 0M41.546 6.85l.903-1.83a.299.299 0 0 1 .226-.164l2.018-.294a.3.3 0 0 0 .167-.51L43.4 2.626a.299.299 0 0 1-.087-.266l.344-2.01a.3.3 0 0 0-.435-.316l-1.805.95a.3.3 0 0 1-.279 0l-1.806-.95a.3.3 0 0 0-.435.316l.345 2.01a.302.302 0 0 1-.087.266l-1.46 1.424a.3.3 0 0 0 .166.511l2.02.294a.297.297 0 0 1 .224.164l.903 1.83a.3.3 0 0 0 .538 0' fill='%23d8b57a'/%3E    %3C/g%3E%3C/svg%3E");
+        }
     }
     .title {
         color: white;
+        margin-bottom: rem(28px);
     }
     &-title {
         font-size: rem(22px);
+        font-family: 'Georgia';
         letter-spacing: -.02em;
+        font-weight: normal;
+        &_sm {
+            letter-spacing: .014em;
+            font-size: rem(17px);
+            margin-bottom: rem(26px); // outline: 1px solid blue;
+            outline-offset: -1px;
+        }
         &_lg {
             font-size: rem(57px);
             letter-spacing: .106em;
-            margin-bottom: rem(29px);
         }
-        &_sm {
-            letter-spacing: .014em;
-            $arrows-margin: rem(84px);
-            font-size: rem(17px);
-            margin-bottom: rem(26px);
-            &:before,
-            &:after {
-                margin-bottom: rem(4px);
-                display: inline-block;
-                content: '';
-                width: rem(102px);
-                height: rem(8px);
-                background-repeat: no-repeat;
-                background-size: cover;
-                vertical-align: middle;
+        &__decor {
+            &-top {
+                position: relative;
+                &:before,
+                &:after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: rem(100px);
+                    top: 0;
+                    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 49.843468 4'%3E    %3Cpath d='M0 4l49.843-1.53L0 .94z' fill='%23d8b57a'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                &:before {
+                    transform: scaleX(-1);
+                    left: rem(-182px);
+                }
+                &:after {
+                    right: rem(-182px);
+                }
             }
-            &:before {
-                margin-right: $arrows-margin;
-                background-position: right center;
-                transform: scaleX(-1);
-            }
-            &:after {
-                margin-left: $arrows-margin;
-                background-position: left center;
+            &-bottom {
+                position: relative;
+                &:after {
+                    display: block;
+                    content: '';
+                    margin-top: rem(28px);
+                    width: 100%;
+                    height: rem(6px);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 111.30627 5.1389198'%3E    %3Cdefs%3E        %3CclipPath id='a'%3E            %3Cpath d='M0 3.854h83.48V0H0z'/%3E        %3C/clipPath%3E    %3C/defs%3E    %3Cg clip-path='url(%23a)' transform='matrix(1.33333 0 0 -1.33333 0 5.139)'%3E        %3Cpath d='M43.696 1.927a1.927 1.927 0 1 0-3.855 0 1.927 1.927 0 0 0 3.855 0M37.383 3.074V.78L0 1.927zM46.097 3.013V.719L83.48 1.866z' fill='%23d8b57a'/%3E    %3C/g%3E%3C/svg%3E");
+                }
             }
         }
     }
     &__scroll {
-        position: absolute;
-        bottom: 0;
-        a {
-            margin: 0 auto;
-            display: block;
-            width: rem(61px);
-            height: rem(61px);
-            border-radius: 50%;
-            border: rem(1px) solid white;
-            background-image: topPath('arrow-down.png');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        margin: rem(70px) auto 0;
+        display: block;
+        width: rem(61px);
+        height: rem(61px);
+        border-radius: 50%;
+        border: rem(1px) solid white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: rem(14px);
+        background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' viewBox='0 0 15 9'%3E    %3Cpath stroke='%23eab96a' stroke-width='2' d='M1 1l7 7M14 1L7 8'/%3E%3C/svg%3E");
+        animation-name: scroll-arrow;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
     }
     &__bg-granola {
         background-image: topPath('granola.png');
@@ -82,5 +111,20 @@
         right: rem(95px);
         background-size: cover;
         z-index: 5;
+    }
+}
+
+@keyframes scroll-arrow {
+    0% {
+        background-position-y: 50%;
+    }
+    25% {
+        background-position-y: 40%;
+    }
+    75% {
+        background-position-y: 60%;
+    }
+    100% {
+        background-position: 50%;
     }
 }

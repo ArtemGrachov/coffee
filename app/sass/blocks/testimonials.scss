@@ -1,6 +1,9 @@
 .testimonials {
     padding-top: rem(64px);
     padding-bottom: rem(100px);
+    &-title {
+        margin-bottom: rem(20px);
+    }
     &-slider {
         margin-top: rem(72px);
         position: relative;
