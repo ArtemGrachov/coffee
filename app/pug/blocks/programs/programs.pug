@@ -1,11 +1,12 @@
-.programs
+section.programs
     .programs__bg-top-left
     .programs__bg-top-right
     .programs__bg-bottom-left
     .programs__bg-bottom-right
     .container
         .programs-header
-            .title.programs-title Programs
+            h1.title
+                span.programs-title Programs
             .subtitle We share their experience and professional barista championships multiple winners
         .tabs
             .tabs-nav
@@ -20,8 +21,11 @@
             .tabs-pages
                 ul
                     li
-                        include ./programs-basic.pug
+                        article
+                            include ./programs-basic.pug
                     li
-                        include ./programs-premium.pug
+                        article
+                            include ./programs-premium.pug
                     li
-                        include ./programs-platinum.pug
+                        article
+                            include ./programs-platinum.pug

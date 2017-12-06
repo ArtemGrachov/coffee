@@ -30,6 +30,7 @@
         }
         &__text {
             line-height: 2.2;
+            margin: 0;
         }
         &-dots {
             @extend %list;

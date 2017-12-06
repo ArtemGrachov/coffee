@@ -2,23 +2,57 @@
     background: rgba(black, .05);
     padding: rem(111px) 0 rem(175px);
     &-title {
-        &:before,
         &:after {
-            width: 1em;
-            height: 1em;
-            border: 1px solid orange;
+            display: block;
             content: '';
-            display: inline-block;
+            height: rem(1px);
+            width: rem(222px);
+            border-bottom: rem(1px) solid black;
+            margin: 0 auto;
+            margin-top: rem(20px);
+        }
+        margin-bottom: rem(96px);
+        &__decor {
+            position: relative;
+            outline: 1px solid red;
+            &:before,
+            &:after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 50px;
+                outline: 1px solid red;
+                top: 0;
+                height: 100%;
+            }
+            &:before {
+                left: -60px;
+            }
+            &:after {
+                right: -60px;
+            }
         }
     }
     &-slider {
         position: relative;
         &-list {
             @extend %list;
-            padding: 0 rem(23px);
+            margin: 0 rem(11px);
         }
         &-item {
-            outline: none;
+            height: rem(100px);
+            outline-offset: -1px;
+        }
+        &__link {
+            height: inherit;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: inherit;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
         }
     }
 }

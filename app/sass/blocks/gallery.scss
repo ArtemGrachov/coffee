@@ -22,6 +22,7 @@
             width: rem(31px);
             content: '';
             display: inline-block;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 26"><line x1="0" y1="13" x2="13" y2="0" style="stroke:#fff;stroke-width:1" /><line x1="0" y1="13" x2="109" y2="13" style="stroke:#fff;stroke-width:1"/><line x1="0" y1="13" x2="13" y2="26" style="stroke:#fff;stroke-width:1" /></svg>');
         }
         &:before {
             margin-right: rem(40px);
@@ -71,7 +72,6 @@
                 content: '';
                 width: rem(109px);
                 height: rem(67px);
-                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 26"><line x1="0" y1="13" x2="13" y2="0" style="stroke:#fff;stroke-width:1" /><line x1="0" y1="13" x2="109" y2="13" style="stroke:#fff;stroke-width:1"/><line x1="0" y1="13" x2="13" y2="26" style="stroke:#fff;stroke-width:1" /></svg>');
                 background-position: center center;
                 background-repeat: no-repeat;
             }

@@ -15,7 +15,6 @@
         width: 100%;
         transform: translateY(-50%);
         position: absolute;
-        background: topPath('block-top.svg'), topPath('block-bottom.svg');
         background-position: top center, bottom center;
         background-repeat: no-repeat;
         background-size: rem(91px), rem(154px);
@@ -47,7 +46,6 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 vertical-align: middle;
-                background-image: topPath('title-decor.svg');
             }
             &:before {
                 margin-right: $arrows-margin;

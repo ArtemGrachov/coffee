@@ -1,12 +1,13 @@
-.partners
+section.partners
     .container
-        .title.partners-title Our partners
+        .title.partners-title
+            span.partners-title__decor Our partners
         .partners-slider
             ul.partners-slider-list
                 each logo in ['abajour_logo','altbee_logo','dedushka_logo','gdeburger_logo','logo_baden_baden','logo_klass','abajour_logo','altbee_logo','dedushka_logo','gdeburger_logo','logo_baden_baden','logo_klass']
                     li.partners-slider-item
-                        a(href="#" target="_blank")
-                            img(src="./img/blocks/partners/" + logo + '.png')
+                        a(href="#" target="_blank").partners-slider__link
+                            img(src="./img/blocks/partners/" + logo + '.png').partners-slider__img
             .slider-nav
                 a(href="#").slider__toggle.slider__toggle_prev
                 a(href="#").slider__toggle.slider__toggle_next
