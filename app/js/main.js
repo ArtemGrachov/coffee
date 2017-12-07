@@ -20,7 +20,9 @@ $(document).ready(function () {
     partnersSlider();
     const scrollToTopButton = $('.scroll-to-top');
     scrollBtnShow(scrollToTopButton, $(window).height() / 2, 'active');
+    const scrolls = scrollsInit(1000);
     scrolls.scrollNav($('.nav a'));
     scrolls.scrollToTop(scrollToTopButton);
     scrolls.scrollArrow($('.top__scroll'))
+
 })

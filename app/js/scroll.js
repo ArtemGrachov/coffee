@@ -1,22 +1,23 @@
-const scrolls = (function () {
-    const scrollTo = function (to) {
+const scrollsInit = function (scrollTime) {
+    const scrollTo = function (scrollTop) {
         $('html, body').animate({
-            scrollTop: to
-        }, 750);
+            scrollTop: scrollTop
+        }, scrollTime);
     }
+
     return {
         scrollNav: function (navLinks) {
             navLinks.each(function () {
                 $(this).on('click', function (e) {
                     e.preventDefault();
-                    console.log($(this).attr('href'))
+                    scrollTo($($(this).attr('href')).offset().top);
                 })
             });
         },
         scrollToTop: function (el) {
             el.on('click', function (e) {
                 e.preventDefault();
-                scrollTop(0)
+                scrollTo(0)
             })
         },
         scrollArrow: function (el) {
@@ -26,13 +27,12 @@ const scrolls = (function () {
             })
         }
     }
-})()
+}
 
 const scrollBtnShow = function (btn, breakpoint, activeClass) {
     const $window = $(window);
     const checkScroll = function () {
         if ($window.scrollTop() > breakpoint && !btn.hasClass(activeClass)) {
-            console.log(activeClass)
             btn.addClass(activeClass);
         } else if ($window.scrollTop() <= breakpoint && btn.hasClass(activeClass)) {
             btn.removeClass(activeClass);
