@@ -39,7 +39,7 @@
     &_sm {
         font-size: rem(17px);
         text-align: left;
-        margin: 0 0 rem(19px);
+        margin: 0 0 rem(23px);
     }
 }
 
@@ -116,4 +116,47 @@
     background-repeat: no-repeat;
     border-radius: 50%;
     display: block;
+}
+
+.scroll {
+    display: block;
+    width: rem(61px);
+    height: rem(61px);
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: rem(14px);
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' viewBox='0 0 15 9'%3E    %3Cpath stroke='%23eab96a' stroke-width='2' d='M1 1l7 7M14 1L7 8'/%3E%3C/svg%3E");
+    &:hover {
+        background-color: rgba($gold, .1);
+        border-color: $gold;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    transform: rotate(180deg);
+    z-index: 15;
+    right: rem(40px);
+    background-color: rgba(black, .8);
+    bottom: rem(-80px);
+    animation-name: scrollTopBtn;
+    animation-duration: 300ms;
+    animation-direction: reverse;
+    &:hover {
+        background-color: rgba(black, 1);
+    }
+    &.active {
+        bottom: rem(40px);
+        animation-direction: normal;
+    }
+}
+
+@keyframes scroll-top-btn {
+    0% {
+        bottom: rem(-80px);
+    }
+    100% {
+        bottom: rem(40px);
+    }
 }

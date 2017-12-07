@@ -4,6 +4,7 @@
 
 .top {
     height: 100vh;
+    min-height: rem(650px);
     background-image: url('../img/layout/mask-white.png'), topPath('background.png');
     background-size: contain, cover;
     background-position: center bottom, center;
@@ -90,18 +91,10 @@
     }
     &__scroll {
         margin: rem(70px) auto 0;
-        display: block;
-        width: rem(61px);
-        height: rem(61px);
-        border-radius: 50%;
-        border: rem(1px) solid white;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: rem(14px);
-        background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' viewBox='0 0 15 9'%3E    %3Cpath stroke='%23eab96a' stroke-width='2' d='M1 1l7 7M14 1L7 8'/%3E%3C/svg%3E");
         animation-name: scroll-arrow;
         animation-duration: 800ms;
         animation-iteration-count: infinite;
+        border: rem(1px) solid white;
     }
     &__bg-el-granola {
         background-image: topPath('granola.png');

@@ -18,4 +18,9 @@ $(document).ready(function () {
     gallerySlider();
     testimonialsSlider();
     partnersSlider();
+    const scrollToTopButton = $('.scroll-to-top');
+    scrollBtnShow(scrollToTopButton, $(window).height() / 2, 'active');
+    scrolls.scrollNav($('.nav a'));
+    scrolls.scrollToTop(scrollToTopButton);
+    scrolls.scrollArrow($('.top__scroll'))
 })

@@ -3,7 +3,7 @@
 }
 
 .programs {
-    padding: rem(90px) 0 rem(140px);
+    padding: rem(90px) 0 rem(141px);
     position: relative;
     &-header {
         margin-bottom: rem(58px);
@@ -35,13 +35,13 @@
     &-prev {
         @extend %clearfix;
         padding-top: rem(97px);
+        margin-bottom: rem(73px);
         color: black;
         &-info {
             padding-top: rem(7px);
             position: relative;
             z-index: 1;
             float: left;
-            margin-bottom: rem(80px);
             .btn {
                 margin-left: rem(2px);
             }

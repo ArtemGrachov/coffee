@@ -1,5 +1,5 @@
 .testimonials {
-    padding: rem(74px) 0 rem(100px);
+    padding: rem(76px) 0 rem(103px);
     &-title {
         margin-bottom: rem(30px);
     }
@@ -42,7 +42,7 @@
         &-dots {
             @extend %list;
             text-align: center;
-            margin-top: rem(49px);
+            margin-top: rem(46px);
             li {
                 display: inline-block;
                 position: relative;

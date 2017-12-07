@@ -7,11 +7,11 @@
     position: relative;
     &__bg {
         &-left {
-            left: rem(-65px);
-            top: rem(-93px);
+            left: rem(-67px);
+            top: rem(-92px);
             background-image: feedbackPath('grain1.png'), feedbackPath('coffebean5_2x.png');
             background-size: cover, rem(370px);
-            background-position: center, rem(359px) rem(238px);
+            background-position: center, rem(361px) rem(237px);
             width: rem(724px);
             height: rem(769px);
         }
