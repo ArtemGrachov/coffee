@@ -34,7 +34,7 @@
     text-align: center;
     letter-spacing: .1em;
     color: black;
-    margin: 0 0 rem(20px);
+    margin: 0 0 rem(30px);
     line-height: 1.19;
     &_sm {
         font-size: rem(17px);
@@ -70,10 +70,6 @@
         background: transparent;
         color: black;
         border-radius: 0;
-        &:hover {
-            background: black;
-            color: white;
-        }
     }
 }
 
@@ -90,6 +86,7 @@
         background-position: center;
         background-repeat: no-repeat;
         padding: rem(50px);
+        outline: none;
         &_prev {
             left: rem(-45px);
             background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' viewBox='0 0 10 18'%3E    %3Cpath stroke='%23485260' stroke-width='2' d='M1 10l8-8M1 9l8 8'/%3E%3C/svg%3E");
@@ -99,4 +96,24 @@
             background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' viewBox='0 0 10 18'%3E    %3Cpath stroke='%23485260' stroke-width='2' d='M9 10L1 2M9 9l-8 8'/%3E%3C/svg%3E");
         }
     }
+}
+
+.bg-el {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: 10;
+}
+
+.fb-link {
+    width: rem(38px);
+    height: rem(38px);
+    background-color: #4267b2;
+    background-image: url('../img/interface/icon-facebook.png');
+    background-size: rem(11px);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: block;
 }

@@ -15,7 +15,7 @@ body {
     color: #485260;
     letter-spacing: -.01em;
     overflow-x: hidden;
-    background: url('../img/backgrounds/background-light.png');
+    background: url('../img/layout/background.png');
     background-size: rem(200px);
 }
 
@@ -49,14 +49,21 @@ input[type="submit"] {
     color: white;
     text-transform: uppercase;
     letter-spacing: .08em;
-    padding: rem(17px) rem(66px) rem(16px);
+    padding: rem(18px) rem(66px) rem(18px);
     cursor: pointer;
     width: auto;
-    line-height: inherit; // ???
+    line-height: 1.4;
     @extend %hover;
     &[disabled] {
         opacity: .5;
         cursor: not-allowed;
+    }
+    &:hover {
+        color: black;
+        cursor: pointer;
+        background: $gold;
+        opacity: 1;
+        box-shadow: 0 0 rem(15px) rem(1px) $gold;
     }
 }
 
@@ -81,6 +88,11 @@ input {
     &:invalid {
         border-color: #751818;
         color: #751818;
+    }
+    &:focus {
+        &::placeholder {
+            color: #555;
+        }
     }
 }
 

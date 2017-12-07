@@ -8,6 +8,7 @@
     background-size: contain, cover;
     background-position: center bottom, center;
     background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
     position: relative;
     &-wrap {
         text-align: center;
@@ -102,15 +103,12 @@
         animation-duration: 800ms;
         animation-iteration-count: infinite;
     }
-    &__bg-granola {
+    &__bg-el-granola {
         background-image: topPath('granola.png');
-        width: rem(240px);
-        height: rem(240px);
-        position: absolute;
-        bottom: rem(-40px);
+        width: rem(238px);
+        height: rem(247px);
+        bottom: rem(-32px);
         right: rem(95px);
-        background-size: cover;
-        z-index: 5;
     }
 }
 

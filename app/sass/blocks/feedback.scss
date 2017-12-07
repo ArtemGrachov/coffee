@@ -1,8 +1,34 @@
+@function feedbackPath($path) {
+    @return url('../img/blocks/feedback/'+$path);
+}
+
 .feedback {
-    padding: rem(122px) 0 0;
+    padding: rem(133px) 0 rem(256px);
+    position: relative;
+    &__bg {
+        &-left {
+            left: rem(-65px);
+            top: rem(-93px);
+            background-image: feedbackPath('grain1.png'), feedbackPath('coffebean5_2x.png');
+            background-size: cover, rem(370px);
+            background-position: center, rem(359px) rem(238px);
+            width: rem(724px);
+            height: rem(769px);
+        }
+        &-right {
+            bottom: rem(13px);
+            right: rem(-175px);
+            background-image: feedbackPath('coffebean5_2x.png');
+            opacity: .12;
+            width: rem(370px);
+            height: rem(358px);
+            transform: scaleY(-1);
+        }
+    }
     &-title {
         text-align: left;
         border-bottom: rem(1px) solid black;
+        padding: 0 0 rem(10px);
         margin-bottom: rem(21px);
     }
     &-subtitle {
@@ -19,6 +45,7 @@
             &_right {
                 text-align: right;
                 vertical-align: bottom;
+                padding-bottom: rem(2px);
             }
         }
     }
@@ -28,6 +55,7 @@
         padding-left: rem(88px);
         padding-right: rem(88px);
         font-size: rem(16px);
+        letter-spacing: .12em;
         &:after {
             position: absolute;
             display: block;

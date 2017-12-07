@@ -1,6 +1,6 @@
 .partners {
     background: rgba(black, .05);
-    padding: rem(111px) 0 rem(168px);
+    padding: rem(122px) 0 rem(168px);
     &-title {
         &-wrap {
             &:after {
@@ -8,7 +8,7 @@
                 content: '';
                 height: rem(1px);
                 width: rem(222px);
-                margin: rem(23px) auto 0;
+                margin: rem(33px) auto 0;
                 border-bottom: rem(1px) solid black;
             }
         }
@@ -34,7 +34,7 @@
         }
     }
     &-slider {
-        margin-top: rem(73px);
+        margin-top: rem(74px);
         position: relative;
         &-list {
             @extend %list;
@@ -42,7 +42,6 @@
         }
         &-item {
             height: rem(100px);
-            outline-offset: -1px;
         }
         &__link {
             height: inherit;
@@ -50,6 +49,7 @@
             vertical-align: middle;
             text-align: center;
             width: inherit;
+            outline: none;
         }
         &__img {
             display: block;

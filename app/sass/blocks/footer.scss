@@ -2,8 +2,9 @@
     color: white;
     background-image: url('../img/layout/mask-white-top.png'), url('../img/blocks/footer/background.jpg');
     background-size: contain, cover;
-    background-position: top center, bottom center;
+    background-position: center top, bottom center;
     background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
     padding: rem(152px) 0 0;
     &-nav {
         text-align: center;
@@ -54,6 +55,7 @@
             &_bottom {
                 .cell {
                     padding: rem(50px) rem(44px) rem(44px);
+                    letter-spacing: .04em;
                 }
             }
         }
@@ -91,6 +93,8 @@
         margin-left: rem(20px);
         font-family: 'RobotoBlack';
         text-transform: uppercase;
+        font-size: rem(13px);
+        letter-spacing: .02em;
         a {
             color: white;
             &:hover {
@@ -99,10 +103,10 @@
         }
         &:before {
             width: rem(1px);
-            height: 1.7em;
+            height: rem(27px);
+            vertical-align: middle;
             border-left: rem(2px) solid white;
             display: inline-block;
-            vertical-align: middle;
             content: '';
             margin-right: rem(20px);
         }

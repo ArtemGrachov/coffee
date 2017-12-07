@@ -4,13 +4,22 @@
 
 .gallery {
     background-image: url('../img/layout/mask-white-top.png'), url('../img/layout/mask-white.png'), galleryPath('background.png');
+    background-attachment: scroll, scroll, fixed;
     background-size: contain, contain, cover;
     background-position: top center, bottom center, center center;
     background-repeat: no-repeat;
-    padding: rem(135px) 0 rem(171px);
+    padding: rem(146px) 0 rem(171px);
+    position: relative;
+    &__bg {
+        background-image: galleryPath('Espresso-servis-coffeefly-01.png');
+        width: rem(231px);
+        height: rem(276px);
+        right: rem(2px);
+        bottom: rem(-90px);
+    }
     &-title {
         &-wrap {
-            margin-bottom: rem(10px);
+            margin-bottom: rem(19px);
         }
         position: relative;
         margin: 0;
@@ -36,7 +45,7 @@
     }
     &-slider {
         @extend %list;
-        margin-top: rem(72px);
+        margin-top: rem(71px);
         &-list {
             height: 100%;
             @extend %list;
