@@ -4,7 +4,6 @@ const scrollsInit = function (scrollTime) {
             scrollTop: scrollTop
         }, scrollTime);
     }
-
     return {
         scrollNav: function (navLinks) {
             navLinks.each(function () {

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log('ready');
     hoverUnderline('.nav', 'ul>li', '.nav__underline', 200);
     tabs.init({
         container: '.tabs',
@@ -12,7 +11,8 @@ $(document).ready(function () {
             },
             onToggleNav: function (tabs, options, index) {
                 underlineSlide.move(tabs.container.find('.tabs__underline'), tabs.nav.eq(index), 300)
-            }
+            },
+            onTogglePage: function (tabs, options, index, oldIndex) {}
         }
     });
     gallerySlider();
@@ -23,6 +23,5 @@ $(document).ready(function () {
     const scrolls = scrollsInit(1000);
     scrolls.scrollNav($('.nav a'));
     scrolls.scrollToTop(scrollToTopButton);
-    scrolls.scrollArrow($('.top__scroll'))
-
+    scrolls.scrollArrow($('.top__scroll'));
 })

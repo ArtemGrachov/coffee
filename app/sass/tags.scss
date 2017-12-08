@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Georgia';
+    font-weight: normal;
     line-height: 1.625;
     color: #485260;
     letter-spacing: -.01em;
@@ -28,7 +29,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'RobotoBlack';
+    font-family: 'Roboto';
+    font-weight: bold;
     color: black;
 }
 
@@ -49,7 +51,8 @@ input[type="submit"] {
     background: black;
     border-radius: rem(2px);
     border: rem(1px) solid black;
-    font-family: 'RobotoBlack';
+    font-family: 'Roboto';
+    font-weight: bold;
     font-size: rem(14px);
     color: white;
     text-transform: uppercase;
@@ -74,7 +77,8 @@ input[type="submit"] {
 input {
     border: none;
     border-bottom: rem(1px) solid black;
-    font-family: 'RobotoBlack';
+    font-family: 'Roboto';
+    font-weight: bold;
     font-size: rem(12.5px);
     text-transform: uppercase;
     letter-spacing: .04em;

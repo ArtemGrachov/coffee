@@ -1,21 +1,27 @@
 @font-face {
-    font-family: 'Georgia';
-    src: url('../fonts/Georgia.ttf');
-}
-
-@font-face {
-    font-family: 'GeorgiaBold';
-    src: url('../fonts/Georgia-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'RobotoBlack';
-    src: url('../fonts/Roboto-Black.ttf');
-}
-
-@font-face {
-    font-family: 'RobotoLight';
+    font-family: 'Roboto';
     src: url('../fonts/Roboto-Light.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    font-weight: normal;
+    src: url('../fonts/Georgia.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    font-weight: normal;
+    src: url('../fonts/Georgia-Bold.ttf');
+    font-weight: bold;
 }
 
 .container {
@@ -24,7 +30,8 @@
 }
 
 %title {
-    font-family: 'RobotoBlack';
+    font-family: 'Roboto';
+    font-weight: bold;
     text-transform: uppercase;
 }
 

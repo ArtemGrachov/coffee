@@ -64,7 +64,8 @@
         margin: 0;
         top: 0;
         right: rem(71px);
-        font-family: 'RobotoBlack';
+        font-family: 'Roboto';
+        font-weight: bold;
         text-transform: uppercase;
         line-height: 1;
         pointer-events: none;
@@ -91,7 +92,8 @@
         &-name {
             color: #2b2b2b;
             font-size: rem(30px);
-            font-family: 'GeorgiaBold';
+            font-family: 'Georgia';
+            font-weight: bold;
             margin: 0 0 rem(59px);
         }
         &-table {
@@ -101,7 +103,8 @@
     &__price {
         padding-left: rem(3px);
         font-size: rem(58px);
-        font-family: 'GeorgiaBold';
+        font-family: 'Georgia';
+        font-weight: bold;
         line-height: 1;
         margin-bottom: rem(23px);
     }

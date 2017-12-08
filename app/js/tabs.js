@@ -1,6 +1,6 @@
 const tabs = (function () {
     const toggleActive = function (list, index, activeClass) {
-        const oldIndex = list.find('.' + activeClass).index();
+        const oldIndex = list.filter('.' + activeClass).index();
         list
             .eq(index)
             .addClass(activeClass)
@@ -44,9 +44,12 @@ const tabs = (function () {
                     tabs.nav
                         .on('click', function (e) {
                             e.preventDefault();
-                            const index = $(this).index();
-                            toggleNav(index, options, tabs);
-                            togglePage(index, options, tabs);
+                            const $this = $(this);
+                            if (!$this.hasClass(options.activeClass)) {
+                                const index = $this.index();
+                                toggleNav(index, options, tabs);
+                                togglePage(index, options, tabs);
+                            }
                         })
                     if (options.callbacks && options.callbacks.onInit) {
                         options.callbacks.onInit(tabs, options);
