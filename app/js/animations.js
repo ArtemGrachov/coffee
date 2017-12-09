@@ -13,18 +13,4 @@ const underlineSlide = (function() {
             })
         }
     }
-})()
-
-const tabAnimation = function(newTab, oldTab, speed) {
-    newTab.stop();
-    oldTab.stop();
-    newTab.css({ 'display': 'none' });
-    oldTab.css({ 'display': 'block' });
-    oldTab.animate({
-        'opacity': 0
-    }, speed, () => {
-        newTab.css({ 'display': 'block', 'opacity': 0 });
-        oldTab.css({ 'display': 'none' });
-        newTab.animate({ 'opacity': 1 })
-    })
-}
+})();

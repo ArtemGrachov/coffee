@@ -17,9 +17,12 @@ body {
 
 a {
     transition: $transition;
+    color: $gold;
+    text-decoration: none;
     &:hover,
     &:focus {
         color: $gold;
+        text-decoration: underline;
     }
 }
 
@@ -71,6 +74,7 @@ input[type="submit"] {
         background: $gold;
         opacity: 1;
         box-shadow: 0 0 rem(15px) rem(1px) $gold;
+        text-decoration: none;
     }
 }
 

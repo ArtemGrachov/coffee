@@ -12,9 +12,6 @@ $(document).ready(function() {
             onToggleNav: function(tabs, options, index) {
                 underlineSlide.move(tabs.container.find('.tabs__underline'), tabs.nav.eq(index), 300)
             },
-            onTogglePage: function(tabs, options, index, oldIndex) {
-                tabAnimation(tabs.pages.eq(index), tabs.pages.eq(oldIndex), 500);
-            }
         }
     });
     gallerySlider();
