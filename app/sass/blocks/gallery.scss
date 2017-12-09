@@ -75,7 +75,7 @@
                 outline-color: $gold;
             }
             &:hover {
-                background: $gold;
+                background: rgba($gold, .5);
             }
             &:before {
                 display: block;

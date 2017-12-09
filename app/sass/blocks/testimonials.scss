@@ -69,6 +69,7 @@
                 position: relative;
                 box-shadow: none;
                 outline: none;
+                transition: $transition;
                 &:before {
                     width: rem(16px);
                     height: rem(16px);
@@ -80,6 +81,11 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%)
+                }
+                &:hover {
+                    &:hover {
+                        opacity: .5;
+                    }
                 }
             }
         }
