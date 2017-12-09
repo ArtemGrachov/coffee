@@ -7,7 +7,7 @@ section.feedback#feedbackSection
             .subtitle.feedback-subtitle Leave a request and we will contact you shortly
             form.feedback-form
                 .feedback-form-section
-                    input(type="text" name="name" placeholder="Your name")
-                    input(type="text" name="phone" placeholder="Contact number")
+                    input(type="text" name="name" id="name" placeholder="Your name" required pattern="^[ a-zA-ZА-ЯіІїЇёЁъ-]*$")
+                    input(type="text" name="phone" id="phone" placeholder="Contact number" required pattern="^[0-9() -]{15}$")
                 .feedback-form-section.feedback-form-section_right
                     button(type="submit").btn_trsp.feedback__submit Send

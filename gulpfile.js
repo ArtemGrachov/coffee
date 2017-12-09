@@ -12,7 +12,7 @@ global.$ = {
     errHdl: require('./gulp/tasks/error').default
 }
 
-$.path.task.forEach(function (taskPath) {
+$.path.task.forEach(function(taskPath) {
     require(taskPath)();
 });
 

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     hoverUnderline('.nav', 'ul>li', '.nav__underline', 200);
     tabs.init({
         container: '.tabs',
@@ -6,13 +6,13 @@ $(document).ready(function () {
         pages: '.tabs-pages',
         activeClass: 'active',
         callbacks: {
-            onInit: function (tabs, options) {
+            onInit: function(tabs, options) {
                 underlineSlide.set(tabs.container.find('.tabs__underline'), tabs.nav.eq(0))
             },
-            onToggleNav: function (tabs, options, index) {
+            onToggleNav: function(tabs, options, index) {
                 underlineSlide.move(tabs.container.find('.tabs__underline'), tabs.nav.eq(index), 300)
             },
-            onTogglePage: function (tabs, options, index, oldIndex) {}
+            onTogglePage: function(tabs, options, index, oldIndex) {}
         }
     });
     gallerySlider();
@@ -24,4 +24,5 @@ $(document).ready(function () {
     scrolls.scrollNav($('.nav a'));
     scrolls.scrollToTop(scrollToTopButton);
     scrolls.scrollArrow($('.top__scroll'));
+    $('#phone').mask('(000) 000-00-00');
 })

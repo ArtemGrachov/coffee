@@ -93,10 +93,6 @@ input {
     &::placeholder {
         color: black;
     }
-    &:invalid {
-        border-color: #751818;
-        color: #751818;
-    }
     &:focus {
         &::placeholder {
             color: #555;
@@ -113,4 +109,15 @@ td,
 th {
     padding: rem(6px) rem(17px) rem(6px);
     border: rem(1px) solid black;
+}
+
+form {
+    &:invalid {
+        button,
+        input[type="button"],
+        input[type="submit"] {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+    }
 }
