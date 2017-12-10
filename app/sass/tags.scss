@@ -23,6 +23,7 @@ a {
     &:focus {
         color: $gold;
         text-decoration: underline;
+        outline: none;
     }
 }
 
@@ -68,7 +69,8 @@ input[type="submit"] {
         opacity: .5;
         cursor: not-allowed;
     }
-    &:hover {
+    &:hover,
+    &:focus {
         color: black;
         cursor: pointer;
         background: $gold;

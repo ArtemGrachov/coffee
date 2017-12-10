@@ -1,0 +1,79 @@
+mixin program-tab(details,checked)
+    .programs-prev
+        h1.programs__bg-title #{details.bgName}
+        .programs__img
+            img(src="./img/blocks/programs/basic/preview.gif")
+        .programs-prev-info
+            h2.programs__course-name #{details.courseName} Course
+            ul.programs-misc-list
+                li
+                    span.icon.icon-certificate
+                    | Certificate
+                li
+                    span.icon.icon-clock
+                    | #{details.time} minets
+            .programs__price #{details.price}
+                span.programs__currency usd
+            a(href="#" target="_blank").btn Registration
+    .programs-about
+        ul.programs-about-list
+            li
+                h3.programs-about__title
+                    span Provenance
+                        br
+                        | Coffee and basic concepts:
+                .programs-about__content
+                    | Legend of the origin of coffee
+                    ul
+                        li Chronicle of the spread of the coffee tree
+                        li What is coffee?
+                        li The structure of the coffee berry
+                        li Arabica and Robusta
+                        li Coffee Belt land
+                        li Fruiting coffee tree
+                        li Seven steps of the coffee plantation to the consumer
+                        li Breeding and hybridization of coffee tree
+            li
+                h3.programs-about__title
+                    span Coffee production technology:
+                .programs-about__content
+                    ul
+                        li Methods for collecting coffee berries
+                        li Processing collected berries
+                        li Calibration and sorting
+                        li Some methods of classification and labeling of coffee beans.
+                        li Formation of grade names.
+                        li Storage of green (not fried) Coffee
+            li
+                h3.programs-about__title
+                    span Roasting technology
+                        br
+                        | bean. And stage
+                        br
+                        | types of roasting.
+                .programs-about__content
+                    ul
+                        li The technology of roasting coffee beans.
+                        li Changes in the beans.
+                        li Stages and types of roasting.
+                        li Roasted coffee. Monosorta and hood.
+                        li Decaffeination of coffee
+                        li Flavoring
+                        li Storage roasted coffee
+        .title.title_sm The course also includes:
+        table
+            tbody
+                each item,index in ['Coffee machine and grinder - practice - types of coffee machines and coffee grinders','What makes professional coffee machines and coffee grinders.','Main components of coffee machines and coffee-Lathes, autolathes. Their purpose','How to choose a coffee machine and coffee grinder','The structure of the machine. How to maintain, clean and customize coffee machine','The structure of the grinders. How to maintain, clean and customize coffee Molko','Making beverages - praktika- machines and espresso rules','Technology and regulations frothed milk','Terms of tasting coffee','Terms of preparation of standard drinks line: espresso, cappuccino, latte and others.','Latte Art - Features practice and the importance of Latte Art in business and the barista','1 views Latte Art - Pitching','2 views Latte Art - topping','3 views Latte Art - Etching','4 views Latte Art - chocolate chip stencils']
+                    tr
+                        td
+                            - var cls = 'icon icon-'
+                            - if (checked.length)
+                                - var isChecked = checked.indexOf(index) > -1
+                                if isChecked
+                                    - cls += 'ok'
+                                else
+                                    - cls +='err'
+                            - else
+                                - cls += 'ok'
+                            span(class=cls)
+                        td #{item}

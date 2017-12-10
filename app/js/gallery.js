@@ -15,12 +15,12 @@ const gallerySlider = function() {
             centerMode: true,
             variableWidth: true,
             autoplaySpeed: 2000,
-            // autoplay: true,
+            autoplay: true,
             touchThreshold: 20,
             prevArrow: $('.gallery-slider').find('.gallery-slider__toggle_prev'),
             nextArrow: $('.gallery-slider').find('.gallery-slider__toggle_next')
         })
         .on('beforeChange', function(e, slick) {
-            setActiveNumber(slick.currentSlide)
+            setActiveNumber(slick.currentSlide + 1)
         })
 }

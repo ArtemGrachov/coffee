@@ -134,7 +134,8 @@
     background-repeat: no-repeat;
     background-size: rem(14px);
     background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' viewBox='0 0 15 9'%3E    %3Cpath stroke='%23eab96a' stroke-width='2' d='M1 1l7 7M14 1L7 8'/%3E%3C/svg%3E");
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: rgba($gold, .1);
         border-color: $gold;
     }
@@ -150,7 +151,8 @@
     animation-name: scrollTopBtn;
     animation-duration: 300ms;
     animation-direction: reverse;
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: rgba(black, 1);
     }
     &.active {

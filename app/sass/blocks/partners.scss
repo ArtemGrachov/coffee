@@ -42,6 +42,14 @@
         }
         &-item {
             height: rem(100px);
+            &:focus {
+                outline: none;
+            }
+            >a {
+                &:focus {
+                    background: rgba($gold, .2);
+                }
+            }
         }
         &__link {
             height: inherit;

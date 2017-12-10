@@ -1,10 +1,11 @@
+include ../mixins/program-tab.pug
 section.programs#programsSection
     .bg-el.programs__bg-top-left
     .bg-el.programs__bg-top-right
     .bg-el.programs__bg-bottom-left
     .bg-el.programs__bg-bottom-right
     .container
-        hgroup.programs-header
+        .programs-header
             h1.title.programs-title-wrap
                 span.programs-title Programs
             .subtitle We share their experience and professional barista championships multiple winners
@@ -22,10 +23,10 @@ section.programs#programsSection
                 ul
                     li
                         article
-                            include ./programs-basic.pug
+                            +program-tab({bgName:'Basic',courseName:'Beginners',time:'240',price: '1 500'},[0,1,6])
                     li
                         article
-                            include ./programs-premium.pug
+                            +program-tab({bgName:'Premium',courseName:'Premium',time:'640',price: '2 500'},[0,1,2,3,4,6,9,11,12])
                     li
                         article
-                            include ./programs-platinum.pug
+                            +program-tab({bgName:'Platinum',courseName:'Platinum',time:'1040',price: '4 500'},true)

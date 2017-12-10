@@ -8,6 +8,10 @@
     color: white;
     a {
         color: white;
+        &:focus {
+            outline: none;
+            color: $gold;
+        }
     }
     &:before {
         content: '';
