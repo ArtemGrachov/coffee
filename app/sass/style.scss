@@ -1,27 +1,25 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Light.ttf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Black.ttf');
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia-Bold.eot');
+    src: url('../fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia-Bold.woff') format('woff'), url('../fonts/Georgia-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Georgia';
+    src: url('../fonts/Georgia.eot');
+    src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/Georgia.woff') format('woff'), url('../fonts/Georgia.ttf') format('truetype');
     font-weight: normal;
-    src: url('../fonts/Georgia.ttf');
-    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Georgia';
-    font-weight: normal;
-    src: url('../fonts/Georgia-Bold.ttf');
-    font-weight: bold;
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.eot');
+    src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Black.woff') format('woff'), url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 .container {
