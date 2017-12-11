@@ -38,15 +38,6 @@ h6 {
     color: black;
 }
 
-input,
-button,
-select {
-    &:focus {
-        outline: rem(1px) dotted black;
-        outline-offset: rem(3px);
-    }
-}
-
 button,
 input[type="button"],
 input[type="submit"] {

@@ -52,17 +52,21 @@
         display: inline-block;
         vertical-align: middle;
         margin-right: rem(21px);
+        letter-spacing: -.015em;
+        font-size: rem(26px);
         a {
             display: block;
             padding: 0 rem(23px);
-            font-size: rem(26px);
             text-decoration: none;
             font-family: 'Roboto';
             font-weight: bold;
-            letter-spacing: -.04em;
             &:hover {
                 color: $gold;
             }
+        }
+        &_light {
+            font-weight: lighter;
+            font-size: rem(28px);
         }
     }
 }
@@ -78,8 +82,9 @@
     }
     li {
         display: inline-block;
-        margin-right: rem(46px);
+        margin-right: rem(49px);
         position: relative;
+        letter-spacing: .001em;
         &:last-child {
             margin-right: 0;
         }
@@ -91,7 +96,7 @@
             width: rem(5px);
             height: rem(5px);
             position: absolute;
-            left: rem(-25px);
+            left: rem(-24px);
             top: 50%;
             transform: translateY(-50%);
         }

@@ -88,13 +88,13 @@
                 background-repeat: no-repeat;
             }
             &_prev {
-                margin-right: rem(106px);
+                margin-right: rem(68px);
                 &:before {
                     margin-left: rem(27px);
                 }
             }
             &_next {
-                margin-left: rem(106px);
+                margin-left: rem(68px);
                 &:before {
                     transform: scaleX(-1);
                     margin-left: rem(-69px);
@@ -107,6 +107,11 @@
         }
         &__count {
             font-size: rem(30px);
+        }
+        &__slide-counter {
+            display: inline-block;
+            width: rem(178px);
+            text-align: center;
         }
     }
 }
